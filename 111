@@ -1,28 +1,25 @@
-print('hello,world'.replace('l','*'))
+'hello,world'.replace('l','*')
 
 
-print (('Good'.lower()+'!')*3)
-print ((('Good'.replace('G','g')).replace('d','d!'))*3)
+('Good'.lower()+'!')*3
+(('Good'.replace('G','g'))+'!')*3
 
 
-
-
-
-print('FhlqoWe92Qbvc'.swapcase())
+'FhlqoWe92Qbvc'.swapcase()
 
 
 
 a='Fh1qoWe92Qbvc'
-b=''
+k=''
 for c in a:
     if c.isdigit():
-        b+=c
+        k+=c
 
-print(b)
+k
 
 
 
-print(sorted([2,0,3,6,9]))
+sorted([2,0,3,6,9])
 
 
 
@@ -50,8 +47,7 @@ print(a)
 
 
 
-def number():
-
+def num():
     str_num=input("input:")
     count1=0
     count2=0
@@ -66,19 +62,14 @@ def number():
         elif i.isspace():
             count3 += 1
         else:
-
             count4+=1
 
-    print("the num is ",count1)
-    print("the zimu is ",count2)
+    print(count1)
+    print(count2)
+    print(count3)
+    print(count4)
 
-    print("the kongge is ",count3)
-
-    print("the qita is ",count4)
-
-    number()
-
-number()
+num()
 
 
 
@@ -86,14 +77,7 @@ number()
 
 
 
-def number():
-
-    a=input("input:")
-    a.replace(" ","")
-    print(a)
-
-
-number()
+'j5j5j5 5 5 5 5 j j '.replace(" ","")
 
 
 
@@ -106,10 +90,10 @@ a = random.randint(0,100)
 b = int(input('input:'))
 while a != b:
     if a > b:
-        print('so small')
+        print('<')
         b = int(input('input:'))
     else:
-        print('so big')
+        print('>')
         b = int(input('input:'))
     i+=1
 else:
