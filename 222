@@ -1,0 +1,55 @@
+def num():
+    lis=[1,2,3,4,5,6,7,8,9]
+    for i in lis:
+        for l in lis:
+            if l<=i:
+                print(l,'*',i,'=',i*l,end='')
+        print('')
+
+num()
+
+
+
+
+def num():
+    for i in range(0,100):
+        print(i,end='')
+        if i%3==0 and i%5!=0:
+            print("Fizz")
+        elif i%3!=0 and i%5==0:
+            print("Buzz")
+        elif i%3==0 and i%5==0:
+            print("FizzBuzz")
+        else:
+            print("")
+
+num()
+
+
+
+
+
+
+
+
+
+def num():
+    nterms=int(input("input:"))
+    n1=0
+    n2=1
+    nth=n1+n2
+    if nterms<=0:
+        print("Place scanf >0")
+    elif nterms==1:
+        print(n1)
+    else:
+        print(n1,end=",")
+        print(n2,end=",")
+        while nth<nterms:
+            print(nth,end=",")
+            n1=n2
+            n2=nth
+            nth=n1+n2
+        print('')
+
+num()
