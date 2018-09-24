@@ -1,0 +1,97 @@
+1、
+def age(name,age):
+	years = 2018
+	print(name,"在",years - age +100,'年为100岁')
+
+age('beiye',17)
+
+2、
+def jiou():
+	x = input("请输入一个整数\n")
+	if int(x) % 2 == 0:
+		print("你输入的是偶数")
+	else:
+		print("你输入的是奇数")
+
+jiou()
+
+3、
+def fnull(lst = []):
+	flag = 0
+	for i in lst:
+		if i =='':
+			flag = 1
+		else:
+			continue
+	if flag == 1:
+		print("有空")
+	else:
+		print("没问题")
+
+		
+fnull([1,2,4,5,''])
+
+def fnull(lst):
+    while '' in lst:
+        print('有空')
+        break
+
+fnull([1,2,4,5,''])
+
+
+def fnull(lst):
+    return all(lst)
+
+fnull([1,2,4,5,''])
+
+4、
+def list(list = []):
+	temp = []
+	for x in list:
+		temp.append(x*x)
+	return temp
+
+def lst(l = []):
+	temp = []
+	temp = [x**2 for x in l]
+	return temp
+
+lst([1,2,4])
+
+5、
+def red(lst = []):
+	return reduce(lambda x,y: x+y,lst)
+
+red([1,2,4,5])
+
+6、
+def mult(x):
+	temp = [i**2 for i in x]
+	return temp
+
+mult([1,2,4,5])
+
+7、
+def hb(lst = [],lst2 = []):
+	l1 = set(lst)
+	l2 = set(lst2)
+	return list(l1&l2)
+
+hb([1,2,3,5],[2,3,4])
+
+8、
+def fmax(a,b,c):
+	return max(a,b,c)
+
+fmax(1,2,4)
+
+def fmax(a,b,c):
+	if a>b and a>c:
+		print(a)
+	elif b>a and b>c:
+		print(b)
+	else:
+		print(c)
+
+		
+fmax(1,2,3)
